@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VEGANIVIERA - Contacto</title>
+        <link rel="stylesheet" href="css/style.css">
+        <!--Fontawesome para los iconos qeu usaremos-->
+        <script src="https://kit.fontawesome.com/1eb3bc478d.js" crossorigin="anonymous"></script>
+        <!-- Fuentes de google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Roboto+Slab:300,400,700|Roboto:400,700" rel="stylesheet">
+        <!--JQUERY-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+      <header>
+        <a href="#contacto">Saltar al contenido principal</a>
+          <div class="container">
+              <!--Animación logo: el fondo cada poco tiempo se pinta en gris-->
+                <div class="logo">
+               <a href="index.html">
+                <img src="media/veganivera.png" alt="Logo del sitio web Veganivera con texto Veganivera">
+                </a>
+              </div>
+              <div class="menu-btn">
+                <span class="fa-sharp fa-solid fa-bars"></em>
+              </div>
+              <nav id="menuDesktop">
+                  <ul>
+                    <li><a  href="index.html">Inicio</a></li>
+                    <li><a href="carta.html">Carta</a></li>
+                    <li><a href="about-us.html">Sobre nosotros</a></li>
+                    <li><a class="active"  href="contacto.html">Contacto</a></li>
+                    <li><a href="blog.html">Blog vegano</a></li>
+                  </ul>
+              </nav>
+              <nav id="menuMobile">
+                  <ul aria-expanded=false>
+                    <li><a  href="index.html">Inicio</a></li>
+                    <li><a href="carta.html">Carta</a></li>
+                    <li><a href="about-us.html">Sobre nosotros</a></li>
+                    <li><a class="active" href="contacto.html">Contacto</a></li>
+                    <li><a  href="blog.html">Blog vegano</a></li>
+                  </ul>
+              </nav>
+          </div>
+        </header>
+        <main id="contacto">
+          <h1>Contacto</h1>
+          <div class="container">
+            <section class="col columna-2">
+              <p>Utiliza el siguiente formulario para ponerte en contacto con nosotros:</p>
+              <form>
+                <div>
+                  <label for="nombre">Nombre*</label>
+                  <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                  <label for="email">Email*</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                  <label for="mensaje">Mensaje*</label>
+                  <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+                <div>
+                  <input type="submit" class="btn" value="Enviar">
+                </div>
+              </form>
+            </section>
+            <section class="col columna-2">
+                <ul class="contacto-lista">
+                  <li><span class='fa fa-envelope'></span> <a href="mailto:info@veganiviera.com" target="__blank">info@veganiviera.com</a></li>
+                  <li><span class='fas fa-phone-alt'></span>  <a href="tel:617671426">Central Palma: 617671426</a></li>
+                  <li><span class='fab fa-facebook'></span> <a href="#" target="__blank">Facebook</a></li>
+                  <li><span class='fab fa-instagram'></span> <a href="#" target="__blank">Instagram</a></li>
+                  <li><span class='fas fa-clock'></span>  10h - 16h | 20h - 00h</li>
+                </ul>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3075.368110627439!2d2.6523273752763727!3d39.573853371587525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129793d081f20b99%3A0x8d6c212285ff16c9!2sNATUR%20POKE%20Palma%20%7C%20Poke%20Bowl%20Mallorca!5e0!3m2!1ses!2ses!4v1686934903346!5m2!1ses!2ses" title="Mapa de dirección del veganiviera restaurante central palma" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </section>
+          </div>
+        </main>
+        <footer>
+          <div class="container">
+            <div class="col columna-3">
+              <!--Animación logo: el fondo cada poco tiempo se pinta en gris-->
+              <div class="logo">
+                <img src="media/veganivera.png" alt="Logo VEGANIVIERA">
+              </div>
+            </div>
+            <div class="col columna-3">
+              <ul>
+                <li><span class='fa fa-envelope'></span> <a href="mailto:info@veganiviera.com" target="__blank">info@veganiviera.com</a></li>
+                <li><span class='fas fa-phone-alt'></span>  <a href="tel:617671426">Central: 617671426</a></li>
+                <li><span class='fab fa-facebook'></span> <a href="#" target="__blank">Facebook</a></li>
+                <li><span class='fab fa-instagram'></span> <a href="#" target="__blank">Instagram</a></li>
+                <li><span class='fas fa-clock'></span>  10h - 16h | 20h - 00h</li>
+              </ul>
+            </div>
+            <div class="col columna-3">
+              <ul>
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="carta.html">Carta</a></li>
+                  <li><href="about-us.html">Sobre nosotros</href=></li>
+                  <li><a href="contacto.html">Contacto</a></li>
+                  <li><a  href="blog.html">Blog vegano</a></li>
+              </ul>        
+            </div>
+          </div>    
+          <div class="copyright">
+              <p>© 2023 Cristina Molano, todos los derechos reservados</p>
+          </div>
+        </footer>
+        <a href="#" title="Si haces click te hará un efecto scrollTop, además cuando estamos arriba hace un fadeOut y al hacer scroll fadeIn" tooltip="2" class="tooltip_elemento center boton-scrolltop">
+          <button id="goToTopButton">&#9650;</button>
+        </a>
+  </body>
+</html>

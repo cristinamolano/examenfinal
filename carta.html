@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Veganivera - Carta del restaurante</title>
+        <link rel="stylesheet" href="css/style.css">
+        <!--Fontawesome para los iconos qeu usaremos-->
+        <script src="https://kit.fontawesome.com/1eb3bc478d.js" crossorigin="anonymous"></script>
+        <!-- Fuentes de google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Roboto+Slab:300,400,700|Roboto:400,700" rel="stylesheet">
+        <!--JQUERY-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="#carta">Saltar al contenido principal</a>
+            <div class="container">
+                <!--Animación logo: el fondo cada poco tiempo se pinta en gris-->
+                <div class="logo">
+                 <a href="index.html">
+                  <img src="media/veganivera.png" alt="Logo del sitio web Veganivera con texto Veganivera">
+                </a>
+                </div>
+                <div class="menu-btn">
+                  <span class="fa-sharp fa-solid fa-bars"></em>
+                </div>
+                <nav id="menuDesktop">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a class="active" href="carta.html">Carta</a></li>
+                        <li><a href="about-us.html">Sobre nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a  href="blog.html">Blog vegano</a></li>
+                </nav>
+
+                <nav id="menuMobile">
+                    <ul aria-expanded=false>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a class="active" href="carta.html">Carta</a></li>
+                        <li><a href="about-us.html">Sobre nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a  href="blog.html">Blog vegano</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main id="carta">
+            <div class="container">
+                <div class="carta-horarios">
+                    <h1>Carta del Restaurante</h1>
+                    <h2>Nuestros platos</h2>
+                    <p>Luego podrás ver la carta completa, pero primero dejate deleitar por nuestros platos! </p>
+                    <div class="plato first">
+                        <div class="col columna-2">
+                            <img src="media/carta1.jpeg" alt="Imagen un bol de fruta con platano, kiwi, fresa, arandanos y moras ">
+                        </div>
+                        <div class="col columna-2 texto">
+                            <h3>Bowl de fruta</h3>
+                            <p>Un bowl de fruta muy completo con fresa, platano, kiwi, fresa, arandanos y mora con canela por encima, un manjar!</p>
+                        </div>
+                    </div>
+                    <div class="plato">
+                        <div class="col columna-2 texto">
+                            <h3>Poke bowl</h3>
+                            <p>Disfruta de nuestros poke bowls haciendo diferentes combinaciones, tenemos varias bases como quinoa o arroz de sushi y heura, tofu y diferentes toppins veganos!</p>
+                        </div>
+                        <div class="col columna-2">
+                            <img src="media/carta2.jpeg" alt="Poke bowl con tofu marinado, edammame, aguacate, mango y col lombarda">
+                       </div>
+                    </div>
+                    <div class="plato">
+                        <div class="col columna-2">
+                            <img src="media/carta3.jpeg" alt="Imagen de brownie con nueves y avena">
+                        </div>
+                        <div class="col columna-2 texto">
+                            <h3>Tostadas con huntables</h3>
+                            <p>Para desayunar unas ricas tostadas con pan de semillas y diferentes huntables como hummus, aguacate...</p>
+                        </div>
+                    </div>
+                    <div class="plato">
+                        <div class="col columna-2 texto">
+                            <h3>Postres 100% sin producto animal</h3>
+                            <p>Nuestros postres deliciosos como el brownie son 100% veganos, y riquisimos.</p>
+                        </div>
+                        <div class="col columna-2">
+                            <img src="media/carta4.jpeg" alt="Imagen de brownie con nueves y avena">
+                        </div>
+                        
+                    </div>
+                    <div class="plato">
+                        <div class="col columna-2">
+                            <img src="media/carta5.jpeg" alt="Nachos con guacamole en el centro">
+                        </div>
+                        <div class="col columna-2 texto">
+                            <h3>Tottopos</h3>
+                            <p>Tottopos (o nachos) con guacamole o hummus para picar será el mejor entrante. También los hacemos con pico de gallo</p>
+                        </div>
+                        
+                    </div>
+                    <div class="plato">
+                        <div class="col columna-2 texto">
+                            <h3>Edammame</h3>
+                            <p>Para acompañar con los tottopos, unos edammames con salsa de soja y oliva. No te dejarán indiferente!</p>
+                        </div>
+                        <div class="col columna-2">
+                            <img src="media/carta6.jpeg" alt="Imagen tarro con edamames">
+                        </div>
+                        
+                    </div>
+                    <h2>Horarios</h2>
+                    <p>Lunes-Domingo y festivos</p>
+                    <p>Horario de mañana: <strong>10h</strong> - <strong>16h</strong></p>
+                    <p>Horario de noche: <strong>20h</strong> - <strong>00h</strong></p>
+                    <a href="#" title="En cada celda que pasa el raton se añade clase highlight para destacar" tooltip="3" class="tooltip_elemento center carta-highlight">
+                        <div class="table-responsive">     
+                            <table class="carta-tabla" summary="Tabla para informar sobre nuestra carta y precios">
+                                <caption>Nuestros platos</caption>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"><span>Entrantes</span></th>
+                                        <td>Tottopos con guacamole 7€</td>
+                                        <td>Tottopos con hummus 7€</td>
+                                        <td>Edammame con oliva y soja 4€</td>
+                                        <td>Patatas con veganesa y salsa brava 5€</td>
+                                        <td></td>
+                                    </tr>
+                                <tr>
+                                    <th scope="row"><span>Tostadas 6€</span> <em>Incluyen rebanadas de pan. Puedes hacer combinaciones</em></th>
+                                    <td>Aceite, tomate y olivas</td>
+                                    <td>Hummus</td>
+                                    <td>Aguacate y tomate</td>
+                                    <td>Crema de mango</td>
+                                    <td>Sobrasada vegana</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><span>Poke bowl 12€</span><em>Puedes combinar los alimentos. Pregunta al camarero</em> </th>
+                                    <td>Base quinoa, tofu, mango, aguacate,tomate cherry </td>
+                                    <td>Base arroz de sushi, heura, piña, cebolla, zanahoria</td>
+                                    <td>Base arroz garbanzo, mango, col, edammame</td>
+                                    <td>Base arroz integral, heura, zanahoria, pepino, piña, soja</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><span>Postres</span></th>
+                                    <td>Brownie vegano con nueces 3€</td>
+                                    <td>Helado 3€</td>
+                                    <td>Tarta oreo 5€</td>
+                                    <td>Bowl fruta 5€</td>
+                                    <td>Tarta de queso vegana 4€</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </a>
+                </div>
+   
+        </main>
+        <footer>
+            <div class="container">
+              <div class="col columna-3">
+                <!--Animación logo: el fondo cada poco tiempo se pinta en gris-->
+                <div class="logo">
+                  <img src="media/veganivera.png" alt="Logo VEGANIVIERA">
+                </div>
+              </div>
+              <div class="col columna-3">
+                <ul>
+                  <li><span class='fa fa-envelope'></span> <a href="mailto:info@veganiviera.com" target="__blank">info@veganiviera.com</a></li>
+                  <li><span class='fas fa-phone-alt'></span>  <a href="tel:617671426">Central: 617671426</a></li>
+                  <li><span class='fab fa-facebook'></span> <a href="#" target="__blank">Facebook</a></li>
+                  <li><span class='fab fa-instagram'></span> <a href="#" target="__blank">Instagram</a></li>
+                  <li><span class='fas fa-clock'></span>  10h - 16h | 20h - 00h</li>
+                </ul>
+              </div>
+              <div class="col columna-3">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="carta.html">Carta</a></li>
+                    <li><href="about-us.html">Sobre nosotros</href=></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a  href="blog.html">Blog vegano</a></li>
+                </ul>        
+              </div>
+            </div>    
+            <div class="copyright">
+                <p>© 2023 Cristina Molano, todos los derechos reservados</p>
+            </div>
+          </footer>
+          <a href="#" title="Si haces click te hará un efecto scrollTop, además cuando estamos arriba hace un fadeOut y al hacer scroll fadeIn" tooltip="2" class="tooltip_elemento center boton-scrolltop">
+            <button id="goToTopButton">&#9650;</button>
+          </a>
+    </body>
+</html>

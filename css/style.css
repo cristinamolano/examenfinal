@@ -1,0 +1,764 @@
+/*Color principal: #662400
+Color secundario: #000000
+Fondo #ffffff
+Bordes: #ccc*/
+/*---------- GENERAL ----------*/
+body, html {
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight:300;
+  font-size: 16px;
+  color: #2e2e2e; 
+}
+  body a, html a {
+    color: inherit;
+    text-decoration: none; 
+  }
+  body p, html p {
+    font-size: 16px; 
+  }
+  body span, html span {
+    font-size: 16px; 
+  }
+
+button, .btn {
+  padding: 15px;
+  background-color: #662400;
+  color: #ffffff;
+  border-radius: 30px;
+  border: 0px;
+  border: 1px solid #ffffff;
+}
+  button:hover, .btn:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #662400; 
+    border: 1px solid #662400;
+  }
+  .btn-white{
+    border:none;
+    background-color:#ffffff;
+    color:#662400;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  .btn-white:hover{
+    border:none;
+    background-color:#000000;
+    color:#ffffff;
+  }
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box; }
+
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+h1 {
+  font-family: Bebas, Roboto, Helvetica Neue, Arial, sans-serif;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0;
+  padding: 20px;
+  color: #000000; 
+}
+h2 {
+  width:100%;
+  text-align:center;
+  padding:20px 0;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 30px; 
+}
+
+h3 {
+  font-family: Bebas, Roboto, Helvetica Neue, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 25px; 
+}
+h4{
+  font-family: Helvetica Neue, Arial, sans-serif;
+  font-size: 20px; 
+}
+i{
+  padding-right:10px;
+}
+.col{
+  padding:15px;
+  display:inline-block;
+  vertical-align: top;
+}
+.container .col:first-child {
+  padding-left:0px;
+}
+.col:last-child {
+  padding-right:0px;
+}
+.columna-2 {
+  width:49%;
+}
+
+.columna-3 {
+  width:33%;
+
+}
+.columna-4 {
+  width:24.5%;
+
+}
+.contacto-lista{
+  margin-bottom:30px;
+}
+.contacto-lista li{
+  padding:5px 0px;
+}
+
+/* --------HEADER-------------*/
+header {
+  width: 100%;
+  text-align: center;
+  background-color: #ffffff;
+  color: #662400;
+  padding-bottom:10px;
+  border-bottom: 1px solid #2e2e2e;
+  position: sticky;
+  position: -webkit-sticky;
+  /*Safari & Chrome*/
+  position: -moz-sticky;
+  /*Firefox*/
+  position: -ms-sticky;
+  /*IEdge*/
+  position: -o-sticky;
+  /*Opera*/
+  z-index: 20;
+  top: 0; 
+}
+
+header .logo img {
+  max-width:150px;
+}
+header > ul {
+  height: 100px;
+  justify-content: end;
+  align-items: end;
+  display: inline-flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; 
+}
+header li {
+  display: inline-block; }
+header a {
+  text-align: center;
+  margin: 10px 30px; 
+}
+header a{
+  color: #000000;
+}
+header nav a:hover{
+  color: #662400;
+  border-bottom: 1px solid #662400;
+
+}
+  header a.active {
+    color: #662400; 
+    border-bottom: 1px solid #662400;
+  }
+header #menuDesktop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Bebas, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-size: 20px; 
+}
+header #menuMobile {
+  display: none;
+}
+header .menu-btn{
+  display:none;
+}
+header a.main{
+  font-size:10px;
+}
+
+
+/*Animacion del logo con filter*/
+.logo-pulse {
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0% {
+    filter: brightness(100%);
+  }
+  50% {
+    filter: brightness(90%);
+  }
+  100% {
+    filter: brightness(100%);
+  }
+}
+
+/* --------CSS FOOTER -------------*/
+footer {
+  border-top: 1px solid #ccc;
+  background-color: #ffffff;
+  color: #000000;
+  padding-top: 30px;
+  margin-top: 30px; 
+}
+  footer a {
+    color: #000000; 
+  }
+  footer .logo {
+    text-align: center; 
+  }
+  footer .logo img {
+    max-width: 100px;
+    padding: 10px; 
+  }
+  footer span{
+    padding-right: 10px;
+    color: #662400; 
+  }
+  footer li {
+    padding: 5px; 
+  }
+  footer .copyright {
+    border-top: 1px solid #ccc;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 20px; 
+  }
+  footer .copyright p {
+    padding: 5px 0;
+    margin: 0; 
+  }
+
+@font-face {
+  font-family: Bebas;
+  src: url(../media/fonts/Bebas.ttf); 
+}
+
+  
+  /* FORMULARIO */
+  
+  form {
+    margin: 20px 0;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  form input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+/*-------carta---------*/
+.table-responsive {
+  overflow-x: auto;
+}
+
+.carta-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0 40px 0;
+}
+
+.carta-tabla caption {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.carta-tabla th,
+.carta-tabla td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.carta-tabla th {
+  background-color: #f2f2f2;
+}
+
+.carta-tabla th[scope="col"] {
+  font-weight: bold;
+}
+
+.carta-tabla th[scope="row"] {
+  font-weight: normal;
+}
+
+.carta-tabla td[data-label]:before {
+  content: attr(data-label);
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.highlight {
+  background-color: #662400;
+  color:#ffffff !important;
+  transition: background-color 0.5s;
+}
+
+#carta img{
+ width:100%;
+}
+#carta h2 {
+  padding-top:40px;
+}
+.plato .col{
+  padding:0;
+  vertical-align:middle;
+}
+.plato.first{
+  margin-top:50px;
+}
+.plato .col.texto:first-child {
+  padding-right:30px;
+}
+.plato .col.texto:last-child {
+  padding-left:30px;
+}
+.carta-tabla span{
+  font-size:20px;
+  font-weight: bold;
+
+}
+
+.carta-tabla em{
+  font-style: italic;
+  font-size: 10px;
+  display:block;
+}
+.carta-horarios {
+  text-align:center;
+}
+
+
+/*-----ABOUT US------*/
+#about-us .restaurante {
+  width:100%;
+  margin:20px 0;
+  background-color: #ffffff;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.restaurante:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+#about-us .col:last-child{
+  padding:15px;
+}
+#about-us .restaurante_img {
+  width:100%;
+  height:360px;
+  vertical-align: bottom;
+}
+#about-us .restaurante_nombre{
+  background-color:#000000;
+  color:#ffffff;
+}
+#about-us .restaurante_nombre h4{
+  padding:15px 0;
+  text-align: center;
+}
+
+#about-us .restaurante_descripcion{
+  background-color:#662400;
+  color:#ffffff;
+  text-align: center;
+}
+#about-us .restaurante_descripcion p{
+  padding:10px 0;
+}
+
+/*-----blog------*/
+#blog {
+  width:100%;
+  margin: 0 auto;
+}
+
+#blog article {
+  margin-bottom: 20px;
+  display:block;
+}
+
+#blog h2 {
+  text-align: left;;
+  margin-bottom: 10px;
+  padding:0;
+}
+
+#blog .resumen {
+  font-weight: bold;
+}
+
+#blog a {
+  font-weight: bold;
+  color:#662400;
+}
+#blog .contenido {
+  display: none;
+  margin-top: 10px;
+}
+
+#blog .leer-mas {
+  margin-top: 10px;
+}
+
+#blog img {
+  margin-bottom: 10px;
+  width:100%;
+}
+
+#blog p {
+  line-height: 1.5;
+  padding-bottom:10px;
+}
+.columna-2a{
+  width:35%;
+}
+.columna-2b{
+  width:64%;
+}
+/* Estilos para expandir el contenido al hacer clic */
+.expandir {
+  display: block !important;
+}
+
+/*------INDEX--------*/
+/*SLIDER*/
+.slider {
+  position: relative;
+  width: 100%;
+  max-height:700px;
+  overflow: hidden;
+  margin-bottom:40px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width:100% !important;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.slide video,
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#index h1{
+  font-size:50px;
+}
+#index h1, h2,h3{
+  text-align: center;
+  padding:10px 0;
+}
+.index-presentacion h4{
+  color:#2e2e2e;
+}
+#index h2{
+  text-transform: uppercase;
+  font-size:30px;
+}
+.call-to-action{
+  width:100%;
+  background-color: #662400;
+  color:#ffffff;
+  text-align:center;
+  margin:20px 0;
+  padding:10px 0;
+}
+.call-to-action button{
+  margin:20px;
+}
+.index-presentacion{
+  margin-bottom:25px;
+}
+#index h3 {
+  text-align:center;
+}
+#index h3 strong{
+  font-size: 25px;
+  border-bottom:#662400 solid 2px;
+}
+#index .index-ventajas{
+  text-align:center;
+  margin:15px 0;
+}
+#index .index-ventajas img{
+  height:61px;
+}
+#index .index-ventajas h4{
+  padding-bottom:5px;
+  padding-top:10px;
+  font-size:20px;
+  font-weight: bold;
+}
+
+#index .index-ventajas span{
+  color:#000000;
+  font-size:50px;
+  margin-top:15px;
+}
+.index-blog{
+  text-align: center;
+}
+.index-blog img{
+  width:100%;
+  height:210px;
+}
+.index-blog h4{
+  min-height: 70px;
+}
+.index-blog span, .index-blog a{
+  display:block;
+  padding: 5px 0;
+}
+
+.index-restaurantes{
+  background-color: #662400;
+  color:#ffffff;
+  text-align:center;
+}
+.index-restaurantes img{
+  max-height:300px;
+}
+.index-restaurantes .texto{
+  text-align:left;
+}
+.index-restaurantes h2{
+  text-align:left;
+}
+.index-restaurantes button{
+  font-size:20px;
+  text-transform: uppercase;
+}
+.index-restaurantes .texto p, .index-restaurantes .texto a{
+  padding-bottom:20px;
+}
+.index-redes ul{
+  text-align: center;
+}
+.index-redes li {
+  display:inline-block;
+  margin:10px 70px;
+}
+.index-redes span{
+  font-size:30px;
+  display:block;
+}
+#goToTopButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #662400;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+#goToTopButton:hover {
+  background-color: #ffffff;
+  color: #662400;
+}
+
+.tooltip_elemento {
+  position: relative;
+}
+.tooltip {
+  display: none;
+  position: absolute;
+  width: 200px;    
+  padding: 10px;
+  margin: 0 0 12px 0;    
+  z-index: 100;
+  bottom: 100%;
+  background: #662400;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+.tooltip:after {
+  content: "";
+  position: absolute;
+  bottom: 40px;
+  z-index: 100;
+  border: 0 solid #662400;
+  border-bottom: 14px solid transparent;
+  border-left-width: 10px;
+  width: 50%;
+  left: 50%;
+}
+
+.tooltip:before {
+  content: "";
+  position: absolute;
+  border: 0 solid #662400;
+  bottom: -14px;
+  z-index: 100;
+  border-right-width: 10px;
+  border-bottom: 14px solid transparent;
+  width: 50%;
+  right: 50%;
+}
+
+
+/*----MEDIA QUERYS-----*/
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  #menuDesktop ul {
+      display: none;
+    }
+  
+    #menuDesktop li {
+      margin: 0;
+    }
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .logo {
+    flex: 1;
+  }
+  header .menu-btn {
+    display:flex;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  header #menuMobile{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  header #menuMobile ul li {
+    padding: 10px;
+    display:block;
+  }
+  
+  header #menuMobile ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .col {
+    padding:10px;
+  }
+  .col:first-child {
+    padding-left:10px;
+  }
+
+  .plato .col.texto:last-child{
+    padding-left:0px;
+  }
+  .plato .col.texto{
+    margin:20px 0;
+  }
+  #carta img{
+    height:auto;
+  }
+  .columna-2 {
+    width:100%;
+  }
+  
+  .columna-3 {
+    width:100%;
+  
+  }
+  .columna-2a{
+    width:100%;
+  }
+  .columna-2b{
+    width:100%;
+  }
+  .columna-4 {
+    width:100%;
+  }
+  .index-blog h4 {
+    min-height:auto;
+  }
+  #about-us .restaurante_img{
+    height:auto;
+  }
+  .carta-tabla th,
+  .carta-tabla td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .carta-tabla caption {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .carta-tabla td[data-label]:before {
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+  .index-blog img{
+    height:auto;
+  }
+
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .titulo{
+      display:block;
+  }
+  .photo-container{
+      display:block;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+}
+
